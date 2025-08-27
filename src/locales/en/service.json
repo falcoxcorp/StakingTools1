@@ -1,0 +1,59 @@
+{
+  "name": "Service Address: <primary><bold>{{address}}</bold></primary>",
+  "balance": "Balance: <primary><bold>{{balance}}</bold></primary>",
+  "form": {
+    "developer": "Development",
+    "marketing": "Marketing",
+    "admin": "Administration",
+    "_newServiceAddress": "New Service Address",
+    "service": "Select Service",
+    "active": "Activate Charge",
+    "payment": "Payment Amount",
+    "tokenAddress": "Token Address",
+    "amount": "Amount"
+  },
+  "fee": {
+    "title": "Administration Fee",
+    "subtitle": "Section where the administration wallet fee is defined",
+    "helperText": "Development: <primary><bold>{{developer}}%</bold></primary> <br/> Marketing: <primary><bold>{{marketing}}%</bold></primary><br/> Administration: <primary><bold>{{admin}}%</bold></primary>"
+  },
+  "adminWallet": {
+    "title": "Administration Wallet",
+    "subtitle": "Section where the administration wallet is defined",
+    "helperText": "Development: <primary><bold>{{developer}}</bold></primary> <br/> Marketing: <primary><bold>{{marketing}}</bold></primary> <br/> Administration: <primary><bold>{{admin}}</bold></primary>"
+  },
+  "newServiceAddress": {
+    "title": "Change Service Contract Address",
+    "subtitle": "Section where the new service contract address is defined"
+  },
+  "updateTokenPayment": {
+    "title": "Update Service Payment (Token)",
+    "subtitle": "Section allowing you to update the service payment",
+    "getPayment": "Current Service Payment: <primary><bold>{{payment}} {{symbol}}</bold></primary>"
+  },
+  "updateEtherPayment": {
+    "title": "Update Service Payment",
+    "subtitle": "Section allowing you to update the service payment",
+    "getPayment": "Current Service Payment: <primary><bold>{{payment}} {{symbol}}</bold></primary>"
+  },
+  "withdrawByToken": {
+    "title": "Withdraw Token Balance",
+    "subtitle": "Section allowing you to withdraw the token balance in the service"
+  },
+  "withdrawByEther": {
+    "title": "Withdraw Balance",
+    "subtitle": "Section allowing you to withdraw the service balance"
+  },
+  "message": {
+    "updateAdminWallet": "Administration wallets updated",
+    "updateFee": "Administration fee updated",
+    "UPDATE_SERVICE": "Service contract address updated",
+    "withdrawByToken": "Tokens withdrawn successfully",
+    "withdrawByEther": "Balance withdrawn successfully",
+    "updateService": "Payment updated successfully",
+    "updateToken": "Token payment updated successfully"
+  },
+  "service": {
+    "STAKING": "Staking Service"
+  }
+}

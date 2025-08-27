@@ -1,0 +1,35 @@
+export enum METHODS_STAKING_TOKEN {
+  //GETS
+  PRECISION_FACTOR = 'PRECISION_FACTOR',
+  SMART_CHEF_FACTORY = 'SMART_CHEF_FACTORY',
+  accTokenPerShare = 'accTokenPerShare',
+  bonusEndBlock = 'bonusEndBlock',
+  hasUserLimit = 'hasUserLimit',
+  isInitialized = 'isInitialized',
+  lastRewardBlock = 'lastRewardBlock',
+  numberBlocksForUserLimit = 'numberBlocksForUserLimit',
+  owner = 'owner',
+  pendingReward = 'pendingReward',
+  poolLimitPerUser = 'poolLimitPerUser',
+  rewardPerBlock = 'rewardPerBlock',
+  rewardToken = 'rewardToken',
+  stakedToken = 'stakedToken',
+  stakedTokenAmount = 'stakedTokenAmount',
+  startBlock = 'startBlock',
+  userInfo = 'userInfo',
+  userLimit = 'userLimit',
+
+  //SET
+  initialize = 'initialize',
+  withdraw = 'withdraw',
+  updateStartAndEndBlocks = 'updateStartAndEndBlocks',
+  updateRewardPerBlock = 'updateRewardPerBlock',
+  updatePoolLimitPerUser = 'updatePoolLimitPerUser',
+  transferOwnership = 'transferOwnership',
+  stopReward = 'stopReward',
+  renounceOwnership = 'renounceOwnership',
+  recoverToken = 'recoverToken',
+  emergencyWithdraw = 'emergencyWithdraw',
+  emergencyRewardWithdraw = 'emergencyRewardWithdraw',
+  deposit = 'deposit'
+}

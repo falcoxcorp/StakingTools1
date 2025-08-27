@@ -1,0 +1,17 @@
+{
+  "title": "Cree su propio token ERC20 sin conocimientos de codificación utilizando nuestro mejor generador de tokens ERC20. Nuestra plataforma intuitiva le permite crear un token único en tan solo unos pocos clics.",
+  "buyTokens": "Compra Tokens Ahora",
+  "social_networks": {
+    "title": "Contactos",
+    "telegram": "Telegram",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "youtube": "Youtube"
+  },
+  "swap": {
+    "title": "SWAP",
+    "description": "¡Revoluciona tu comercio de criptomonedas con el SWAP! Nuestra plataforma te permite intercambiar de manera segura y rápida las monedas asociadas a nuestro proyecto. ¡Benefíciate a ti mismo y apoya nuestra iniciativa utilizando el SWAP hoy mismo!",
+    "action": "SWAP"
+  }
+}

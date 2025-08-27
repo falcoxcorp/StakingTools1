@@ -1,0 +1,55 @@
+{
+  "tokenList": "My Tokens",
+  "selectTokenAddress": "Select the token",
+  "etherConfig": {
+    "isActive": "Activate service payment",
+    "paymentAmount": "Service amount"
+  },
+  "config": {
+    "create": "Update token",
+    "details": "Configuration details",
+    "form": {
+      "tokenAddress": "Token address",
+      "name": "Token name",
+      "isActive": "Activate token",
+      "paymentAmount": "Service price",
+      "minBalanceBNB": "Minimum balance"
+    },
+    "get": {
+      "title": "Token management",
+      "subtitle": "Token listing section"
+    },
+    "update": {
+      "error": "Error updating token configuration",
+      "success": "Token configuration updated successfully",
+      "action": "Update Token"
+    },
+    "tokenConfig": {
+      "title": "Token Configuration",
+      "subtitle": "Here you select the token you want to configure, consider the selected network"
+    }
+  },
+  "ether": {
+    "section_1": {
+      "title": "Minimum Factory Balance",
+      "subtitle": "Section to manage the minimum allowed balance in the factory"
+    },
+    "etherConfig": {
+      "title": "Network Token Configuration",
+      "subtitle": "Here you configure the service price in the selected network's currency",
+      "success": "Configuration updated successfully",
+      "error": "There was an error updating"
+    },
+    "withdrawEther": {
+      "title": "Withdraw my: <primary><bold>{{ crypto }}</bold></primary>",
+      "subtitle": "Section to withdraw the amount in <primary><bold>{{ crypto }}</bold></primary>.",
+      "success": "Withdrawal successfully completed",
+      "error": "Error attempting to withdraw balance"
+    },
+    "withdraw": "Withdraw amount"
+  },
+  "token": {
+    "title": "Select token to configure",
+    "subtitle": "Section where you select the token to configure"
+  }
+}

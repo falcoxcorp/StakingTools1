@@ -1,0 +1,9 @@
+{
+  "metamask": {
+    "connect_button": {
+      "connect": "Conectar",
+      "disconnect": "Desconectar",
+      "connected": "Conectado"
+    }
+  }
+}

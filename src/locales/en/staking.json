@@ -1,0 +1,181 @@
+{
+  "details": "Contract Details",
+  "onlyStaking": "Only Staking",
+  "simpleDetail": "Details",
+  "stepper": {
+    "stepper_1": "Blockchain",
+    "stepper_2": "Staking Initialization",
+    "stepper_3": "Confirmation"
+  },
+  "form": {
+    "token": "Token Address",
+    "amount": "Amount",
+    "stakedToken": "Staked Token",
+    "rewardToken": "Reward Token",
+    "rewardPerBlock": "Reward per Block",
+    "startBlock": "Start Date of Reward",
+    "bonusEndBlock": "End Date of Reward",
+    "numberBlocksForUserLimit": {
+      "title": "User Limit Date",
+      "helperText": "Set the deadline for new users, between the start date and the end date of the staking.",
+      "active": "Set the deadline for new users. If left inactive, there is no user limit.",
+      "detail": "No user limit."
+    },
+    "poolLimitPerUser": {
+      "label": "Pool Limit per User",
+      "helperText": "If set to 0, there is no limit to the amount of tokens a user can deposit."
+    }
+  },
+  "startBlockDate": "Date: <date/>",
+  "startBlockNumber": "Block Number: {{blocks}}",
+  "paidByToken": "Pay by Token",
+  "tokenAddress": "Select Payment Method",
+  "notes": {
+    "audit": "It only takes 10 seconds to successfully initiate the staking process, with no need for manual intervention. After successful confirmation, stakes are automatically assigned to the creator/owner address. The staking system has no copyright restrictions, it is automatically deployed on the main network, and verified.",
+    "note_creation": "All tokens have been reviewed by the security audit company and have successfully passed the contract security audit."
+  },
+  "error": {
+    "title": "Error Initializing Staking",
+    "max-start-block": "The end date of reward must be after the start date",
+    "max-number-blocks-for-user-limit": "You must define a block that is between the start block and the end block, with the condition (startBlock + numberBlocksForUserLimit) <= endBlock.",
+    "max-amount": "The amount exceeds your balance",
+    "max-zero": "The amount must be greater than zero",
+    "greater-than-zero":"The reward must be greater than zero"
+  },
+  "success": {
+    "viewStaking": "View Staking List",
+    "createNewStaking": "Initialize New Staking"
+  },
+  "alert": {
+    "message": "To create staking on the <primary><bold>{{network}} ({{slug}})</bold></primary> network, you need to switch to that network."
+  },
+  "pool": {
+    "title": "STAKING POOLS",
+    "subtitle": "Earn passive income while you sleep",
+    "sort": {
+      "title": "Sorted by:",
+      "APR": "APR",
+      "EARNED": "Earned",
+      "TOTAL_STAKING": "Total staked",
+      "LATEST": "Latest"
+    },
+    "header": {
+      "rewardToken": "Earn {{name}}",
+      "stakingToken": "Staking {{name}}"
+    },
+    "action": {
+      "details": {
+        "startIn": "Starts in:",
+        "endIn": "Ends in:",
+        "endInCount_one": "{{count}} day",
+        "endInCount_other": "{{count}} days",
+        "startInCount_one": "{{count}} day",
+        "startInCount_other": "{{count}} days",
+        "APY": "APY",
+        "stakingTotal": "Total staked"
+      }
+    }
+  },
+  "action": {
+    "stake": "Staking <primary><bold>{{symbol}}</bold></primary>",
+    "create":"Create Staking"
+  },
+  "stake": {
+    "modal": {
+      "title": "Staking in Pool",
+      "get": "Get",
+      "balance": "Balance: {{balance}} {{symbol}} <bold><primary>≈$ {{balanceUSD}}</primary></bold>"
+    },
+    "withdraw": {
+      "title": "Withdraw Stake"
+    }
+  },
+  "reward": {
+    "tokenEarn": "Earn <primary>{{symbol}}</primary>"
+  },
+  "message": {
+    "deposit": "Tokens for staking have been successfully added.",
+    "approve": "Tokens approved for staking successfully.",
+    "withdraw": "Tokens withdrawn successfully.",
+    "emergencyRewardWithdraw": "Reward tokens withdrawn in emergency.",
+    "recoverToken": "Tokens successfully recovered.",
+    "stopReward": "Staking stopped successfully",
+    "updatePoolLimitPerUser": "Pool token deposit limit per user updated successfully",
+    "updateRewardPerBlock": "Reward per block updated successfully",
+    "updateStartAndEndBlocks": "Staking start and end dates updated successfully"
+  },
+  "equalUSD": "≈$ {{currency}}",
+  "quantityToken": "{{quantity}} {{symbol}}",
+  "quantityUSD": "$ {{quantity}}",
+  "harvest": "Harvest",
+  "harvesting": "Harvesting <primary>{{symbol}}</primary>",
+  "staked": "Staked <primary>{{symbol}}</primary>",
+  "withdraw": "Withdraw Stake",
+  "approve": "Approve",
+  "liveStaking": "Live Staking",
+  "finished": "Finished",
+  "noteAPY": "Calculated based on current rates and subject to changes according to various external variables. It's an approximate estimation provided for convenience purposes only and by no means represents guaranteed returns.",
+  "noResult": {
+    "title": "Oops, sorry!",
+    "subtitle": "No matches found",
+    "description": "You may not be on the correct network or no staking has been created",
+    "action": "Create Staking"
+  },
+  "apy": {
+    "info": "Calculated based on current rates and subject to changes according to various external variables. It's an approximate estimation provided solely for informational purposes and by no means represents guaranteed returns.",
+    "title": "ROI Calculator",
+    "stakedFor": "Staked for",
+    "detail": {
+      "title": "ROI AT CURRENT RATES"
+    }
+  },
+  "stakingList": "My Staking",
+  "columns": {
+    "address": "Staking Address",
+    "tokenStaking": "Token in Staking",
+    "tokenReward": "Reward Token",
+    "symbol": "Symbol",
+    "total": "Total staked"
+  },
+  "admin": {
+    "balance": "Balance: <bold><primary>{{balance}} {{symbol}}</primary></bold>",
+    "emergencyRewardWithdraw": {
+      "title": "Withdraw Reward Tokens",
+      "subtitle": "In this section, you can withdraw reward tokens by entering the amount"
+    },
+    "recoverToken": {
+      "title": "Recover Tokens",
+      "subtitle": "In this section, you can recover tokens sent accidentally",
+      "helperText": "To recover your token balance, enter the token address."
+    },
+    "stopReward": {
+      "title": "Stop Staking",
+      "subtitle": "In this section, you can stop staking, halting the reward distribution",
+      "action": "Stop Rewards"
+    },
+    "updateStartAndEndBlocks": {
+      "title": "Update Staking Start and End Dates",
+      "subtitle": "In this section, you can update the start and end dates of staking, and you can initialize staking again."
+    },
+    "updateRewardPerBlock": {
+      "title": "Update Reward per Block",
+      "subtitle": "In this section, you can update the reward per block.",
+      "reward": "Current Reward: <bold><primary>{{amount}} {{symbol}}</primary></bold>"
+    },
+    "updatePoolLimitPerUser": {
+      "title": "Update Pool Limit per User",
+      "subtitle": "In this section, you can update the amount of tokens a user can deposit. If set to 0, there is no token limit.",
+      "limit": "Token Limit per User: <bold><primary>{{amount}} {{symbol}}</primary></bold>",
+      "infinite": "UNLIMITED TOKENS"
+    }
+  },
+  "rewardPerBlock": "<primary><bold>{{reward}}</bold></primary> per block",
+  "rewardCalculate": "Calculate Rewards",
+  "calculate": "Calculate",
+  "totalBlock": "Total Blocks",
+  "copyBalance": "Copy Reward",
+  "clipboardCopy": {
+    "success": "Reward per block copied",
+    "error": "An error occurred"
+  }
+}

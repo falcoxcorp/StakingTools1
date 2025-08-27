@@ -1,0 +1,1 @@
+export { default as NotSearchResult } from './NotSearchResult'

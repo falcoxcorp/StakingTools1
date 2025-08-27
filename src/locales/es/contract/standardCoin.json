@@ -1,0 +1,20 @@
+{
+  "fee": {
+    "success": "La tarifa se actualizó correctamente",
+    "error": "Error al actualizar las tarifas"
+  },
+  "address": {
+    "success": "La dirección se actualizó correctamente",
+    "error": "Error al actualizar la dirección"
+  },
+  "amount": {
+    "success": "La cantidad de tokens se actualizó correctamente",
+    "error": "Error al actualizar la cantidad de tokens"
+  },
+
+  "_taxFee": "Tarifa de transacción (fee)",
+  "_liquidityFee": "Tarifa de liquidez (fee)",
+  "_devFee": "Tarifa de desarrollo (fee)",
+  "uniswapV2Router": "Dirección del Enrutador (v2)",
+  "_devWalletAddress": "Dirección de Desarrollo"
+}

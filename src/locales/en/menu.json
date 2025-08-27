@@ -1,0 +1,58 @@
+{
+  "home": "STAKING TOOLS",
+  "securityPolitic": "Security Policy",
+  
+  "create_token": {
+    "title": "Create Token",
+    "basic": "Basic Token",
+    "simple": "Simple Token",
+    "standard": "Standard Token",
+    "advanced": "Advanced Token",
+    "tokenList": "My Tokens"
+  },
+
+  "admin": {
+    "title": "Administration",
+    "token_manager": "Token Manager",
+    "settings": "Settings"
+  },
+  "airdrop":{
+    "pipi":"PIPI Airdrop"
+  },
+  "marketplace":{
+    "title":"Marketplaces",
+    "toto":"NFT Marketplace"
+  },
+  "whitePaper": "White Paper",
+  "privateSale":{
+    "title":"Private Sale",
+    "createPrivateSale":"Create Private Sale",
+    "privateSaleList":"Private Sale List"
+  },
+  "launchpad":{
+    "title":"Launchpads",
+    "createLaunchpad":"Create Launchpad",
+    "createFairLaunch":"Create Fair Launch",
+    "launchpadList":"Launchpad List"
+  },
+  "lockTokens":{
+    "title":"Lock Tokens",
+    "createBlockTokens":"Create Locked Tokens",
+    "tokens":"Tokens",
+    "liquidity":"Liquidity"
+  },
+  "staking":{
+    "title":"Staking",
+    "createStaking":"Create Staking",
+    "myStaking":"My Staking",
+    "pools":"Staking Pools"
+  },
+  "dexView":"Dexview",
+  "kyc":"KYC and Audit",
+  "tokens":{
+    "SIMPLE": "Simple Token",
+    "BASIC": "Basic Token",
+    "STANDARD": "Standard Token",
+    "ADVANCED": "Advanced Token"
+  }
+}

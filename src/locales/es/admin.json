@@ -1,0 +1,55 @@
+{
+  "tokenList": "Mis Tokens",
+  "selectTokenAddress": "Seleccione el token",
+  "etherConfig": {
+    "isActive": "Activar pago de servicio",
+    "paymentAmount": "Monto del servicio"
+  },
+  "config": {
+    "create": "Actualizar token",
+    "details": "Detalles de la configuración",
+    "form": {
+      "tokenAddress": "Dirección del token",
+      "name": "Nombre del token",
+      "isActive": "Activar el token",
+      "paymentAmount": "Precio del servicio",
+      "minBalanceBNB": "Saldo mínimo"
+    },
+    "get": {
+      "title": "Gestión de tokens",
+      "subtitle": "Sección de listado de tokens"
+    },
+    "update": {
+      "error": "Error al actualizar la configuración del token",
+      "success": "Configuración del token actualizada exitosamente",
+      "action": "Actualizar Token"
+    },
+    "tokenConfig": {
+      "title": "Configuración de Token",
+      "subtitle": "Aquí seleccionas el token que deseas configurar, ten en cuenta la red seleccionada"
+    }
+  },
+  "ether": {
+    "section_1": {
+      "title": "Saldo mínimo de la fábrica",
+      "subtitle": "Sección para gestionar el saldo mínimo permitido en la fábrica"
+    },
+    "etherConfig": {
+      "title": "Configuración del token de la red",
+      "subtitle": "Aquí configuras el precio del servicio en la moneda de la red seleccionada",
+      "success": "La configuración se actualizó correctamente",
+      "error": "Hubo un error al actualizar"
+    },
+    "withdrawEther": {
+      "title": "Retirar mis: <primary><bold>{{ crypto }}</bold></primary>",
+      "subtitle": "Sección para retirar el monto en <primary><bold>{{ crypto }}</bold></primary>.",
+      "success": "Retiro realizado correctamente",
+      "error": "Error al intentar retirar el saldo"
+    },
+    "withdraw": "Retirar monto"
+  },
+  "token":{
+    "title":"Selección del token a configurar",
+    "subtitle":"Sección donde selecionas el token a configurar"
+  }
+}

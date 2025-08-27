@@ -1,0 +1,16 @@
+export { default as common } from './common.json'
+export { default as menu } from './menu.json'
+export { default as web3 } from './web3.json'
+export { default as createToken } from './createToken.json'
+export { default as locales } from './locales.json'
+export { default as admin } from './admin.json'
+export { default as erc20 } from './erc20.json'
+export { default as securityPolitic } from './securityPolitic.json'
+export { default as footer } from './footer.json'
+export { default as home } from './home.json'
+
+export { default as falcoCoin } from './contract/falcoCoin.json'
+export { default as standardCoin } from './contract/standardCoin.json'
+
+export { default as staking } from './staking.json'
+export { default as service } from './service.json'

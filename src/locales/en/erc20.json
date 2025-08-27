@@ -1,0 +1,73 @@
+{
+  "name": "Token Name",
+  "symbol": "Symbol",
+  "address": "Token Address",
+  "stepper": {
+    "stepper_1": "Blockchain",
+    "stepper_2": "Create Token",
+    "stepper_3": "Confirmation"
+  },
+  "actions": {
+    "next": "Next",
+    "back": "Back",
+    "confirmation": "Create Token"
+  },
+  "alert": {
+    "alertSwitchNetwork": "If you want to create a token on the <primary><bold>{{network}} ({{slug}})</bold></primary> network, you must switch to that network.",
+    "action": "Switch Network"
+  },
+  "confirm": {
+    "network": {
+      "details": "Network Details",
+      "name": "Name",
+      "symbol": "Symbol"
+    },
+    "token": {
+      "details": "Token Details"
+    }
+  },
+  "form": {
+    "_name": "Token Name",
+    "_symbol": "Symbol",
+    "_eg_symbol": "e.g. USDT",
+    "_supply": "Initial Supply",
+    "_decimals": "Decimals (1-18)",
+    "_txFee": "Transaction Tax (Wallet)",
+    "_lpFee": "Burn Fee",
+    "_DexFee": "Holders Reward Fee",
+    "feeAddress": "Commission Address (feeAddress)",
+    "tokenOwner": "Token Owner Address (tokenOwner)",
+    "routerAddress": "Router Address",
+    "service": "Service",
+    "paymentAmount": "Service Amount"
+  },
+  "advance": {
+    "_txFee": "Holders Reward Fee (txFee)",
+    "_lpFee": "Auto LP (lpFee)",
+    "_DexFee": "Transaction Tax (DexFee)"
+  },
+  "errors": {
+    "SYMBOL": {
+      "MAX_": "Token symbol must have a maximum of 5 characters"
+    },
+    "DECIMALS": {
+      "MAX_18": "Maximum allowed decimals is 18",
+      "MIN_1": "Minimum allowed decimals is 1"
+    }
+  },
+  "successOk": {
+    "title": "Successfully Completed",
+    "description": "The process has been successfully completed.",
+    "buttons": {
+      "viewTokens": "View Your Tokens",
+      "createNewToken": "Create New Token"
+    }
+  },
+  "successError": {
+    "title": "Error Creating Token",
+    "description": "An error occurred, the transaction was cancelled, there is a network error, or you have insufficient balance. Please contact support.",
+    "buttons": {
+      "createNewToken": "Try Again"
+    }
+  }
+}

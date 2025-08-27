@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.6 183.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #ffb70a;
+      }
+
+      .cls-5 {
+        fill: #b2b2b2;
+      }
+
+      .cls-6 {
+        fill: #e0e0e0;
+      }
+
+      .cls-3 {
+        opacity: .25;
+      }
+
+      .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        opacity: .11;
+      }
+
+      .cls-7 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g id="Group_17702" data-name="Group 17702">
+      <g id="Group_17700" data-name="Group 17700">
+        <circle id="Ellipse_1142" data-name="Ellipse 1142" class="cls-4" cx="91.8" cy="91.8" r="91.8"/>
+        <circle id="Ellipse_1142-2" data-name="Ellipse 1142-2" class="cls-3" cx="91.8" cy="91.8" r="76.12"/>
+        <g id="Group_11621" data-name="Group 11621">
+          <rect id="Rectangle_6054" data-name="Rectangle 6054" class="cls-6" x="21.41" y="29.02" width="141.3" height="111.75" rx="8.4" ry="8.4" transform="translate(-12.87 153.25) rotate(-75.76)"/>
+          <path id="Rectangle_6055" data-name="Rectangle 6055" class="cls-2" d="m85.31,10.29h0c.59-2.32,2.95-3.73,5.27-3.14l39.85,10.11c2.32.59,3.73,2.95,3.14,5.27h0c-.59,2.32-2.95,3.73-5.27,3.14l-39.85-10.11c-2.32-.59-3.73-2.95-3.14-5.27Z"/>
+          <g id="Group_11616" data-name="Group 11616">
+            <path id="Path_24300" data-name="Path 24300" class="cls-5" d="m50.48,141.07l64.99,16.49c4.49,1.13,9.06-1.59,10.21-6.08l26.32-103.72c1.13-4.49-1.59-9.06-6.08-10.21l-78.63-19.95c-4.5-1.13-9.06,1.59-10.21,6.08l-22.92,90.3"/>
+            <path id="Path_24301" data-name="Path 24301" class="cls-2" d="m53.37,138.93l64.99,16.49c4.49,1.13,9.06-1.59,10.21-6.08l26.32-103.72c1.13-4.49-1.59-9.06-6.08-10.21L70.19,15.46c-4.5-1.13-9.06,1.59-10.21,6.08l-22.92,90.3"/>
+            <path id="Path_24302" data-name="Path 24302" class="cls-1" d="m53.37,138.93l-16.3-27.09,13.47,3.42c4.3,1.09,6.95,5.41,5.97,9.74,0,0-3.14,13.93-3.14,13.93Z"/>
+          </g>
+          <g id="Group_11617" data-name="Group 11617">
+            <rect id="Rectangle_6056" data-name="Rectangle 6056" class="cls-1" x="63.9" y="77.82" width="5.62" height="7.03" transform="translate(-28.54 125.99) rotate(-75.76)"/>
+            <rect id="Rectangle_6057" data-name="Rectangle 6057" class="cls-6" x="95.81" y="63.55" width="5.62" height="51.77" transform="translate(-12.33 163.02) rotate(-75.76)"/>
+          </g>
+          <g id="Group_11618" data-name="Group 11618">
+            <rect id="Rectangle_6058" data-name="Rectangle 6058" class="cls-1" x="61.29" y="88.21" width="5.62" height="7.03" transform="translate(-40.57 131.3) rotate(-75.76)"/>
+            <rect id="Rectangle_6059" data-name="Rectangle 6059" class="cls-6" x="93.34" y="73.97" width="5.62" height="51.77" transform="translate(-24.29 168.49) rotate(-75.76)"/>
+          </g>
+          <g id="Group_11619" data-name="Group 11619">
+            <rect id="Rectangle_6060" data-name="Rectangle 6060" class="cls-1" x="58.41" y="99.44" width="5.62" height="7.03" transform="translate(-53.64 136.97) rotate(-75.76)"/>
+            <rect id="Rectangle_6061" data-name="Rectangle 6061" class="cls-6" x="90.26" y="85.15" width="5.62" height="51.77" transform="translate(-37.45 173.93) rotate(-75.76)"/>
+          </g>
+          <g id="Group_11617-2" data-name="Group 11617">
+            <rect id="Rectangle_6056-2" data-name="Rectangle 6056" class="cls-1" x="72.09" y="45.28" width="5.62" height="7.03" transform="translate(9.18 109.39) rotate(-75.76)"/>
+            <rect id="Rectangle_6057-2" data-name="Rectangle 6057" class="cls-6" x="104" y="31" width="5.62" height="51.77" transform="translate(25.4 146.42) rotate(-75.76)"/>
+          </g>
+          <g id="Group_11618-2" data-name="Group 11618">
+            <rect id="Rectangle_6058-2" data-name="Rectangle 6058" class="cls-1" x="69.49" y="55.66" width="5.62" height="7.03" transform="translate(-2.84 114.7) rotate(-75.76)"/>
+            <rect id="Rectangle_6059-2" data-name="Rectangle 6059" class="cls-6" x="101.54" y="41.43" width="5.62" height="51.77" transform="translate(13.43 151.9) rotate(-75.76)"/>
+          </g>
+          <g id="Group_11619-2" data-name="Group 11619">
+            <rect id="Rectangle_6060-2" data-name="Rectangle 6060" class="cls-1" x="66.6" y="66.9" width="5.62" height="7.03" transform="translate(-15.91 120.37) rotate(-75.76)"/>
+            <rect id="Rectangle_6061-2" data-name="Rectangle 6061" class="cls-6" x="98.46" y="52.6" width="5.62" height="51.77" transform="translate(.28 157.34) rotate(-75.76)"/>
+          </g>
+        </g>
+        <g id="Group_11596" data-name="Group 11596">
+          <path id="Path_24268" data-name="Path 24268" class="cls-7" d="m121.8,123.6c16.57,0,30,13.43,30,30s-13.43,30-30,30-30-13.43-30-30c-.02-16.55,13.37-29.98,29.92-30,.03,0,.05,0,.08,0Z"/>
+        </g>
+        <g id="Group_11622" data-name="Group 11622">
+          <rect id="Rectangle_6062" data-name="Rectangle 6062" class="cls-1" x="108.11" y="144.47" width="33.77" height="7.75" rx="3.87" ry="3.87" transform="translate(-65.97 182.42) rotate(-60)"/>
+          <circle id="Ellipse_1145" data-name="Ellipse 1145" class="cls-1" cx="112.87" cy="169.35" r="4.65"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,701 @@
+[
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_owner",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256[3]",
+              "name": "_fee",
+              "type": "uint256[3]"
+          },
+          {
+              "internalType": "address[3]",
+              "name": "_adminWallet",
+              "type": "address[3]"
+          }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "address[3]",
+              "name": "_adminWallet",
+              "type": "address[3]"
+          }
+      ],
+      "name": "AdminWalletUpdated",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "ContractBalanceWithdrawn",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "developer",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "marketing",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "admin",
+              "type": "uint256"
+          }
+      ],
+      "name": "EtherAdminReceived",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "EtherReceived",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "EtherWithdrawn",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "uint256[3]",
+              "name": "_fee",
+              "type": "uint256[3]"
+          }
+      ],
+      "name": "FeeUpdated",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+          },
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+          }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "string",
+              "name": "service",
+              "type": "string"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "payment",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+          }
+      ],
+      "name": "ServiceUpdated",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "string",
+              "name": "service",
+              "type": "string"
+          },
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "payment",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+          }
+      ],
+      "name": "TokenCostUpdated",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "string",
+              "name": "service",
+              "type": "string"
+          },
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          }
+      ],
+      "name": "TokenRemoved",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          },
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "feeDeveloper",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "feeMarketing",
+              "type": "uint256"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "feeAdmin",
+              "type": "uint256"
+          }
+      ],
+      "name": "TokensAdminReceived",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+          },
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "TokensReceived",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "WithdrawalSuccessful",
+      "type": "event"
+  },
+  {
+      "anonymous": false,
+      "inputs": [
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+          },
+          {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "name": "WithdrawalTokenSuccessful",
+      "type": "event"
+  },
+  {
+      "inputs": [],
+      "name": "adminWallet",
+      "outputs": [
+          {
+              "internalType": "address",
+              "name": "developer",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "marketing",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "admin",
+              "type": "address"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "fee",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "developer",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "marketing",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "admin",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "getBalanceEther",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          }
+      ],
+      "name": "getBalanceToken",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          }
+      ],
+      "name": "getServiceActive",
+      "outputs": [
+          {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          }
+      ],
+      "name": "getServicePayment",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          },
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          }
+      ],
+      "name": "getServiceTokenPayment",
+      "outputs": [
+          {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+          {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "_owner",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "receiveTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          },
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          }
+      ],
+      "name": "removeToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          }
+      ],
+      "name": "requireValidERC20Token",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+          }
+      ],
+      "name": "services",
+      "outputs": [
+          {
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+          },
+          {
+              "internalType": "uint256",
+              "name": "payment",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+          }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_developer",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "_marketing",
+              "type": "address"
+          },
+          {
+              "internalType": "address",
+              "name": "_admin",
+              "type": "address"
+          }
+      ],
+      "name": "updateAdminWallet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "uint256",
+              "name": "_developer",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_marketing",
+              "type": "uint256"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_admin",
+              "type": "uint256"
+          }
+      ],
+      "name": "updateFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          },
+          {
+              "internalType": "bool",
+              "name": "_active",
+              "type": "bool"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_payment",
+              "type": "uint256"
+          }
+      ],
+      "name": "updateService",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          },
+          {
+              "internalType": "string",
+              "name": "_service",
+              "type": "string"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_payment",
+              "type": "uint256"
+          },
+          {
+              "internalType": "bool",
+              "name": "_active",
+              "type": "bool"
+          }
+      ],
+      "name": "updateToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "withdrawByEther",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "inputs": [
+          {
+              "internalType": "address",
+              "name": "_token",
+              "type": "address"
+          },
+          {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+          }
+      ],
+      "name": "withdrawByToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+  },
+  {
+      "stateMutability": "payable",
+      "type": "receive"
+  }
+]

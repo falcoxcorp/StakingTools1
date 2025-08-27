@@ -1,0 +1,60 @@
+{
+  "edit": "Edit Contract",
+  "action": "Actions",
+  "connectMetamask": "Connect to Metamask",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "save": "Save",
+  "update": "Update",
+  "copyAddress": "Copy Address",
+  "linkAddress": "Go to Contract",
+  "withdraw": "Withdraw",
+  "selectTokenAddress": "Select Token",
+  "transfer": "Transfer",
+  "config": "Configure",
+  "search": "Search ...",
+  "clipboardCopy": {
+    "success": "Contract address copied successfully",
+    "error": "Error copying contract address"
+  },
+  "networks": {
+    "connect": {
+      "bsc": "You must connect to the BSC network"
+    }
+  },
+  "deleteConfirmation": {
+    "title": "Delete",
+    "confirmation": "Are you sure you want to delete? Confirm"
+  },
+  "errors": {
+    "MIN_0": "Minimum required is 0",
+    "MAX_100": "Maximum required is 100",
+    "MAX_25": "Maximum required is 25",
+    "required": "Required",
+    "is_integer": "Number must be an integer",
+    "networks": {
+      "switch_network_error": "An error occurred while trying to switch networks",
+      "network_not_found": "Specified network could not be found"
+    },
+    "valid_wallet": "Must be a valid address",
+    "letter": "Only letters are allowed",
+    "ERROR": "Error!",
+    "METAMASK_TX_SIGNATURE": "MetaMask Tx Signature: User denied transaction signature.",
+    "NUMBER": {
+      "POSITIVE": "Number must be positive",
+      "MAX_LENGTH_18": "Number must have a maximum size of 9999999999999999999"
+    }
+  },
+  "noResult": {
+    "title": "Empty List",
+    "description": "No results found"
+  },
+  "selectToken": "Select Token",
+  "selectNetwork": "Select Network",
+  "enabledStaking": "Enable Staking",
+  "stake": "Stake",
+  "max": "Max",
+  "get": "Get",
+  "confirm": "Confirm",
+  "note":"Note"
+}

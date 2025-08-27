@@ -1,0 +1,578 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_owner",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "_service",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "owner",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "stakingContract",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "NewSmartChef",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "oldAddress",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "newAddress",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "ServiceAddressUpdated",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "stakingContract",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "StakingContractCreated",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "owner",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawalSuccessful",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawalTokenSuccessful",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_service",
+        "internalType": "string",
+        "type": "string"
+      },
+      {
+        "name": "_stakedToken",
+        "internalType": "contract IERC20Metadata",
+        "type": "address"
+      },
+      {
+        "name": "_rewardToken",
+        "internalType": "contract IERC20Metadata",
+        "type": "address"
+      },
+      {
+        "name": "_rewardPerBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_startBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_bonusEndBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_poolLimitPerUser",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_numberBlocksForUserLimit",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployStakingPaidByEther",
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_service",
+        "internalType": "string",
+        "type": "string"
+      },
+      {
+        "name": "_token",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "_stakedToken",
+        "internalType": "contract IERC20Metadata",
+        "type": "address"
+      },
+      {
+        "name": "_rewardToken",
+        "internalType": "contract IERC20Metadata",
+        "type": "address"
+      },
+      {
+        "name": "_rewardPerBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_startBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_bonusEndBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_poolLimitPerUser",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "_numberBlocksForUserLimit",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployStakingPaidByToken",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployedStakingContracts",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployedStakingContractsByOwner",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address[]",
+        "type": "address[]"
+      }
+    ],
+    "inputs": [],
+    "name": "getDeployedStakingContracts",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address[]",
+        "type": "address[]"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "_owner",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "getDeployedStakingContractsByOwner",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "stakingContractToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "rewardToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "stakedToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "startBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "bonusEndBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "rewardPerBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "stakingActive",
+            "internalType": "bool",
+            "type": "bool"
+          }
+        ],
+        "name": "",
+        "internalType": "struct IStakingContractInfo[]",
+        "type": "tuple[]"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "_owner",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "getDeployedStakingContractsByOwnerInfo",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "stakingContractToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "rewardToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "stakedToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "startBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "bonusEndBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "rewardPerBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "stakingActive",
+            "internalType": "bool",
+            "type": "bool"
+          }
+        ],
+        "name": "",
+        "internalType": "struct IStakingContractInfo[]",
+        "type": "tuple[]"
+      }
+    ],
+    "inputs": [],
+    "name": "getDeployedStakingContractsInfo",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "stakingContractToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "rewardToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "stakedToken",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "startBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "bonusEndBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "rewardPerBlock",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "stakingActive",
+            "internalType": "bool",
+            "type": "bool"
+          }
+        ],
+        "name": "",
+        "internalType": "struct IStakingContractInfo[]",
+        "type": "tuple[]"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "addressContracts",
+        "internalType": "address[]",
+        "type": "address[]"
+      }
+    ],
+    "name": "getDeployedStakingContractsInfoByAddressList",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "_stakingContract",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "rewardToken",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "stakedToken",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "startBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "endBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "rewardPerBlock",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      {
+        "name": "stakingActive",
+        "internalType": "bool",
+        "type": "bool"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "stakingContract",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "getStakingContractInfoByAddress",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "inputs": [],
+    "name": "owner",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_address",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "removeDeployedStakingContract",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [],
+    "name": "renounceOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_newServiceAddress",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "updateServiceContractAddress",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

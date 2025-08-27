@@ -1,0 +1,1 @@
+export { default as FormTokenConfig } from './FormTokenConfig'

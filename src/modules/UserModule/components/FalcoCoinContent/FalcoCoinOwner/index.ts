@@ -1,0 +1,1 @@
+export {default as FalcoCoinOwner} from './FalcoCoinOwner'

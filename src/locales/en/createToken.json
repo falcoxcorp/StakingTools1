@@ -1,0 +1,71 @@
+{
+  "create": "Create Token",
+  "cancel": "Cancel",
+  "tokenAddress": "Select Payment Method",
+  "taxSell": "Sales Tax",
+  "taxBuy": "Purchase Tax",
+  "taxWalletSetting": "Tax Wallet Setting",
+  "swapDefault": "Default Swap: <bold><primary> {{router}} </bold></primary>",
+  "form": {
+    "_name": "Token Name",
+    "_symbol": "Symbol",
+    "_eg_symbol": "e.g. USDT",
+    "_supply": "Initial Supply",
+    "_decimals": "Decimals (1-18)",
+    "_txFee": "Transaction Tax (Wallet)",
+    "_lpFee": "Burn Fee",
+    "_DexFee": "Holders Reward Fee",
+    "feeAddress": "Commission Address (feeAddress)",
+    "tokenOwner": "Token Owner Address (tokenOwner)",
+    "routerAddress": "Router Address",
+    "service": "Service",
+    "_routerWallet": "Router Address (v2)",
+    "_devWallet": "Development Address (devWallet)",
+    "_marketingWallet": "Marketing Address (marketingWallet)",
+    "_charityTaxWallet": "Charity Tax Address (charityTaxWallet)",
+    "_devTaxBuy": "Development Tax (devTaxBuy)",
+    "_marketingTaxBuy": "Marketing Tax (marketingTaxBuy)",
+    "_charityTaxBuy": "Charity Tax (charityTaxBuy)",
+    "_liquidityTaxBuy": "Liquidity Tax (liquidityTaxBuy)",
+    "_devTaxSell": "Development Tax (devTaxSell)",
+    "_marketingTaxSell": "Marketing Tax (marketingTaxSell)",
+    "_charityTaxSell": "Charity Tax (charityTaxSell)",
+    "_liquidityTaxSell": "Liquidity Tax (liquidityTaxSell)",
+    "customRouter": "Custom Router Address",
+    "taxType": {
+      "fee": "Fee",
+      "DEVELOPER": "Development",
+      "MARKETING": "Marketing",
+      "CHARITY": "Charity",
+      "LIQUIDITY": "Liquidity"
+    },
+    "standard": {
+      "_txFee": "Transaction Fee (fee)",
+      "_lpFee": "Liquidity Fee (fee)",
+      "_DexFee": "Development Fee (fee)"
+    }
+  },
+  "errors": {
+    "SYMBOL": {
+      "MAX_": "Token symbol must have a maximum of 5 characters"
+    },
+    "DECIMALS": {
+      "MAX_18": "Maximum allowed decimals is 18",
+      "MIN_1": "Minimum allowed decimals is 1"
+    }
+  },
+  "paid": {
+    "errors": {
+      "error": "Failed to create token"
+    },
+    "success": {
+      "ok": "Token created successfully"
+    }
+  },
+  "paidByToken": "Pay by Token",
+
+  "notes": {
+    "audit": "All tokens have been reviewed by the security audit company and have successfully passed the contract security audit.",
+    "note_creation": "It only takes 10 seconds to successfully create the token, without manual intervention. After successful creation, the token will be automatically transferred to the creator/owner address. The token has no copyright, it is automatically deployed on the main network and verified."
+  }
+}

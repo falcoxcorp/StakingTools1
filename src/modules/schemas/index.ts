@@ -1,0 +1,1 @@
+export * from './create-token-erc20.schema'

@@ -1,0 +1,40 @@
+{
+  "editFee": "Edit Token Fee",
+  "renounce": "Renounce Token",
+  "details": {
+    "title": "Token Details",
+    "name": "Token Name",
+    "symbol": "Token Symbol",
+    "decimals": "Decimals",
+    "owner": "Token Owner",
+    "_TAX_FEE": "Transaction Tax (Wallet)",
+    "_BURN_FEE": "Burn Fee",
+    "_CHARITY_FEE": "Holders Reward Fee",
+    "renounceOwnership": "Renounce as Owner",
+    "newOwner": "New Owner Address",
+    "feeAddress": "Fee Address",
+    "newFeeAddress": "New Fee Address",
+    "totalSupply": "Total Supply"
+  },
+  "feeUpdate": {
+    "success": "Contract fees were updated successfully",
+    "error": "Error updating contract fees"
+  },
+  "renounceOwner": {
+    "success": "You have successfully renounced ownership of the token",
+    "error": "Error renouncing ownership of the token"
+  },
+  "errors": {
+    "owner": "You are not the owner of the token or have already renounced ownership"
+  },
+  "transferOwner": {
+    "title": "Transfer Contract to New Owner",
+    "success": "Owner transfer was successful.",
+    "error": "An error occurred while trying to transfer ownership."
+  },
+  "feeAddress": {
+    "title": "Update Fee Address",
+    "success": "Fee address was updated successfully.",
+    "error": "An error occurred while trying to update the fee address."
+  }
+}

@@ -1,0 +1,1 @@
+export {default as FalcoCoinFeeAddress} from './FalcoCoinFeeAddress'

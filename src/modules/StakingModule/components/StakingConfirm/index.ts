@@ -1,0 +1,1 @@
+export {default as StakingConfirm} from './StakingConfirm'

@@ -1,0 +1,1 @@
+export { default as ServiceUpdateTokenPayment } from './ServiceUpdateTokenPayment'

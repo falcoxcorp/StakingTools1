@@ -1,0 +1,71 @@
+{
+  "create": "Crear Token",
+  "cancel": "Cancelar",
+  "tokenAddress": "Seleccione el método de pago",
+  "taxSell":"Impuesto de ventas",
+  "taxBuy": "Impuesto de compra",
+  "taxWalletSetting":"Configuración de la billetera de impuestos",
+  "swapDefault":"Intercambio predeterminado: <bold><primary> {{router}} </bold></primary>",
+  "form": {
+    "_name": "Nombre del Token",
+    "_symbol": "Símbolo",
+    "_eg_symbol": "p.ej. USDT",
+    "_supply": "Suministro Inicial",
+    "_decimals": "Decimales (1-18)",
+    "_txFee": "Transaction tax(Wallet)",
+    "_lpFee": "Burn fee",
+    "_DexFee": "Holders reward fee",
+    "feeAddress": "Dirección de las Comisiones (feeAddress)",
+    "tokenOwner": "Dirección del Titular del Token (tokenOwner)",
+    "routerAddress": "Dirección del Enrutador",
+    "service": "Servicio",
+    "_routerWallet":"Dirección del router (v2)",
+    "_devWallet":"Dirección de desarrollo (devWallet)",
+    "_marketingWallet":"Dirección de marketing (marketingWallet)",
+    "_charityTaxWallet":"Dirección de impuestos de caridad (charityTaxWallet)",
+    "_devTaxBuy":"Impuesto de desarrollo (devTaxBuy)",
+    "_marketingTaxBuy":"Impuesto de marketing (marketingTaxBuy)",
+    "_charityTaxBuy":"Impuesto de caridad (charityTaxBuy)",
+    "_liquidityTaxBuy":"Impuesto de liquidez (liquidityTaxBuy)",
+    "_devTaxSell":"Impuesto de desarrollo (devTaxSell)",
+    "_marketingTaxSell":"Impuesto de marketing (marketingTaxSell)",
+    "_charityTaxSell":"Impuesto de caridad (charityTaxSell)",
+    "_liquidityTaxSell":"Impuesto de liquidez (liquidityTaxSell)",
+    "customRouter":"Dirección del Enrutador Personalizado",
+    "taxType":{
+      "fee":"Tarifa (Fee)",
+      "DEVELOPER":"Desarrollo",
+      "MARKETING":"Marketing",
+      "CHARITY":"Caridad",
+      "LIQUIDITY":"Liquidez"
+    },
+    "standard":{
+      "_txFee": "Tarifa de transacción (fee)",
+      "_lpFee": "liquidez (fee)",
+      "_DexFee": "Desarrollo (fee)"
+    }
+  },
+  "errors": {
+    "SYMBOL": {
+      "MAX_": "El símbolo del token debe tener como máximo 5 caracteres"
+    },
+    "DECIMALS": {
+      "MAX_18": "El máximo de decimales permitido es 18",
+      "MIN_1": "El mínimo de decimales permitido es 1"
+    }
+  },
+  "paid": {
+    "errors": {
+      "error": "No se pudo crear el token"
+    },
+    "success": {
+      "ok": "Token creado correctamente"
+    }
+  },
+  "paidByToken":"Pagar mediante token",
+
+  "notes":{
+    "audit":"Todos los tokens han sido revisados por la empresa de auditoría de seguridad y han superado la auditoría de seguridad del contrato con éxito.",
+    "note_creation":"Solo se necesitan 10 segundos para crear exitosamente el token, sin intervención manual. Después de la exitosa creación, el token se transferirá automáticamente a la dirección del creador/propietario. El token no tiene ningún derecho de autor, se implementa automáticamente en la red principal y se verifica."
+  }
+}

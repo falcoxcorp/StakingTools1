@@ -1,0 +1,20 @@
+{
+  "fee": {
+    "success": "The fee was updated successfully",
+    "error": "Error updating the fees"
+  },
+  "address": {
+    "success": "The address was updated successfully",
+    "error": "Error updating the address"
+  },
+  "amount": {
+    "success": "The token amount was updated successfully",
+    "error": "Error updating the token amount"
+  },
+
+  "_taxFee": "Transaction Fee",
+  "_liquidityFee": "Liquidity Fee",
+  "_devFee": "Development Fee",
+  "uniswapV2Router": "Router Address (v2)",
+  "_devWalletAddress": "Development Wallet Address"
+}

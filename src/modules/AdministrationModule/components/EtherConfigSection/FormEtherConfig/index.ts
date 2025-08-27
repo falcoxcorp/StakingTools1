@@ -1,0 +1,1 @@
+export { default as FormEtherConfig } from './FormEtherConfig'

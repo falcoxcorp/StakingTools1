@@ -1,0 +1,5 @@
+export {default as HomePage} from './HomePage'
+export {default as FormPage} from './FormPage'
+export {default as CreateToken} from './block_chain/CreateToken'
+export {default as ContractEdit} from './user/ContractEdit'
+export {default as SecurityPoliticPage} from './common/SecurityPoliticPage'

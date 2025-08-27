@@ -1,0 +1,42 @@
+{
+  "title":"Política de Seguridad de STAKING_TOOL para la Creación de Tokens y Servicio de Staking",
+  "verify": "Estoy de acuerdo con las políticas de seguridad de STAKING TOOL. Para consultar las políticas de seguridad, por favor, visita el siguiente enlace: <primary><route>Políticas de Seguridad de STAKING TOOL</route></primary>",
+  
+  "section_1":{
+    "title":"1. Responsabilidad del Usuario:",
+    "description_1":"Los usuarios son responsables de garantizar que los tokens que creen en la plataforma cumplan con todas las leyes y regulaciones aplicables, así como de cualquier actividad relacionada con el servicio de staking."
+   
+  },
+  "section_2":{
+    "title":"2. Anonimato de los Usuarios:",
+    "description_1":"STAKING_TOOL no revelará la identidad de los usuarios que creen tokens o participen en el servicio de staking en la plataforma. La privacidad de nuestros usuarios es una prioridad."
+  },
+  "section_3":{
+    "title":"3. Blockchain Pública:",
+    "description_1":"Todos los tokens creados en STAKING_TOOL, así como las transacciones relacionadas con el servicio de staking, se registrarán en una cadena de bloques pública y transparente. La información estará disponible para cualquier persona que acceda a la cadena de bloques."
+  },
+  "section_4":{
+    "title":"4. Scams y Tokens Maliciosos:",
+    "description_1":"STAKING_TOOL no se hace responsable de los tokens creados por usuarios que resulten ser fraudulentos o maliciosos, ni de actividades fraudulentas relacionadas con el servicio de staking.",
+    "description_2":"Los usuarios deben realizar su propia diligencia debida al invertir o interactuar con tokens creados en la plataforma y al participar en el servicio de staking."
+  },
+  "section_5":{
+    "title":"5. Tokens de STAKING_TOOL:",
+    "description_1":"STAKING_TOOL solo se hace responsable de los tokens que la empresa misma haya creado y anunciado bajo su marca STAKING_TOOL. Estos tokens se consideran productos oficiales de STAKING_TOOL."
+   
+  },
+  "section_6":{
+    "title":"6. Garantía del Código:",
+    "description_1":"STAKING_TOOL garantiza que su código está desarrollado y mantenido al más alto nivel de seguridad y calidad. Nos hacemos plenamente responsables de la integridad y seguridad de nuestro código al 100%."
+  },
+  "section_7":{
+    "title":"7. Comunicación con los Usuarios:",
+    "description_1":"STAKING_TOOL se compromete a comunicar claramente estas políticas a los usuarios antes de que utilicen la plataforma para crear tokens o participar en el servicio de staking.",
+    "description_2":"Los usuarios serán notificados de cualquier cambio en estas políticas de seguridad relacionadas con la creación de tokens o el servicio de staking.",
+    "description_3":"STAKING_TOOL investigará y tomará medidas adecuadas en respuesta a tales denuncias."
+  },
+  "section_8":{
+    "title":"8. Cumplimiento Legal:",
+    "description_1":"STAKING_TOOL cooperará plenamente con las autoridades legales en caso de investigaciones relacionadas con actividades ilegales en la plataforma, tanto en la creación de tokens como en el servicio de staking."
+  }
+}

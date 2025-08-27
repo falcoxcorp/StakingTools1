@@ -1,0 +1,1 @@
+export const ACTIVE_NETWORK_STAKING_TESTNET = import.meta.env.VITE_APP_NETWORK_STAKING_TESTNET === 'true'

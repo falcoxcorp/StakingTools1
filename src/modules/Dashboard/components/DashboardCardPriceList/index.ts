@@ -1,0 +1,1 @@
+export {default as DashboardCardPriceList} from './DashboardCardPriceList'

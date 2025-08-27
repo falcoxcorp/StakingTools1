@@ -1,0 +1,61 @@
+{
+  "edit":"Editar Contrato",
+  "action":"Acciones",
+  "connectMetamask": "Conéctate a Metamask",
+  "cancel": "Cancelar",
+  "delete": "Eliminar",
+  "save": "Guardar",
+  "update": "Actualizar",
+  "copyAddress": "Copiar dirección",
+  "linkAddress": "Ir al contrato",
+  "withdraw": "Retirar",
+  "selectTokenAddress": "Seleccione el token",
+  "transfer":"Transferir",
+  "config":"Configurar",
+  "search":"Buscar ...",
+  "clipboardCopy": {
+    "success": "Dirección del contrato copiada correctamente",
+    "error": "Error al copiar la dirección del contrato"
+  },
+  "networks": {
+    "connect": {
+      "bsc": "Debes conectarte a la red BSC"
+    }
+  },
+  "deleteConfirmation": {
+    "title": "Eliminar",
+    "confirmation": "¿Estás seguro de que quieres eliminar? Confirmar"
+  },
+  "errors": {
+    "MIN_0": "El mínimo requerido es 0",
+    "MAX_100": "El máximo requerido es 100",
+    "MAX_25": "El máximo requerido es 25",
+    "required": "Requerido",
+    "is_integer": "El número debe ser entero",
+    "networks": {
+      "switch_network_error": "Se produjo un error al intentar cambiar de red",
+      "network_not_found": "No se pudo encontrar la red especificada"
+    },
+    "valid_wallet": "Debe ser una dirección válida",
+    "letter": "Solo se permiten letras",
+    "ERROR": "¡Error!",
+    "METAMASK_TX_SIGNATURE": "Firma de Tx de MetaMask: Usuario denegó la firma de la transacción.",
+    "NUMBER": {
+      "POSITIVE": "El número debe ser positivo",
+      "MAX_LENGTH_18":"El número debe tener un tamaño máximo de 9999999999999999999"
+    }
+  },
+  "noResult": {
+    "title": "Lista Vacía",
+    "description": "No se encontraron resultados"
+  },
+  "selectToken":"Seleccione el token",
+  "selectNetwork":"Seleccione la red",
+  "enabledStaking":"Habilitar Staking",
+  "stake":"Stake",
+  "max":"Máximo",
+  "get":"Obtener",
+  "confirm":"Confirmar",
+  "note":"Nota"
+ 
+}

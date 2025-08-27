@@ -1,0 +1,59 @@
+{
+  "home": "STAKING TOOLS",
+  "securityPolitic": "Política de Seguridad",
+  
+  "create_token": {
+    "title": "Crear Token",
+    "basic": "Token Básico",
+    "simple": "Token Simple",
+    "standard": "Token Estándar",
+    "advanced": "Token Avanzado",
+    "tokenList": "Mis Tokens"
+  },
+
+  "admin": {
+    "title": "Administración",
+    "token_manager": "Gestionar Tokens",
+    "settings": "Configuración",
+    "service":"Servicio"
+  },
+  "airdrop":{
+    "pipi":"PIPI Airdrop"
+  },
+  "marketplace":{
+    "title":"Mercados",
+    "toto":"Mercado NFT"
+  },
+  "whitePaper": "Papel Blanco",
+  "privateSale":{
+    "title":"Venta privada",
+    "createPrivateSale":"Crear venta privada",
+    "privateSaleList":"Lista de venta privada"
+  },
+  "launchpad":{
+    "title":"Lanzamientos",
+    "createLaunchpad":"Crear Plataforma de Lanzamiento",
+    "createFairLaunch":"Crear un Lanzamiento Justo",
+    "launchpadList":"Lista de Plataformas de Lanzamiento"
+  },
+  "lockTokens":{
+    "title":"Bloquear tokens",
+    "createBlockTokens":"Crear tokens bloqueados",
+    "tokens":"Tokens",
+    "liquidity":"Liquidez"
+  },
+  "staking":{
+    "title":"Staking",
+    "createStaking":"Crear Staking ",
+    "myStaking":"Mis Staking",
+    "pools":"Staking Pools"
+  },
+  "dexView":"Dexview",
+  "kyc":"KYC y Auditoria",
+  "tokens":{
+    "SIMPLE": "Token Simple",
+    "BASIC": "Token Básico",
+    "STANDARD": "Token Estándar",
+    "ADVANCED": "Token Avanzado"
+  }
+}

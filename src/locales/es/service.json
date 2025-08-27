@@ -1,0 +1,59 @@
+{
+  "name": "Dirección (Address) del servicio: <primary><bold>{{address}}</bold></primary>",
+  "balance": "Balance: <primary><bold>{{balance}}</bold></primary>",
+  "form": {
+    "developer": "Desarrollo",
+    "marketing": "Marketing",
+    "admin": "Administración",
+    "_newServiceAddress": "Nueva dirección de servicio",
+    "service": "Seleccione el servicio",
+    "active": "Activar cobro",
+    "payment": "Monto a pagar",
+    "tokenAddress": "Dirección del token",
+    "amount": "Monto"
+  },
+  "fee": {
+    "title": "Tarifa (fee) de administración",
+    "subtitle": "Sección donde se define la tarifa (fee) de las billeteras (wallet) de administración",
+    "helperText": "Desarrollo: <primary><bold>{{developer}}%</bold></primary> <br/> Marketing: <primary><bold>{{marketing}}%</bold></primary><br/> Administración: <primary><bold>{{admin}}%</bold></primary>"
+  },
+  "adminWallet": {
+    "title": "Billetera (wallet) de administración",
+    "subtitle": "Sección donde se define la Billetera (wallet) de administración",
+    "helperText": "Desarrollo: <primary><bold>{{developer}}</bold></primary> <br/> Marketing: <primary><bold>{{marketing}}</bold></primary> <br/> Administración: <primary><bold>{{admin}}</bold></primary>"
+  },
+  "newServiceAddress": {
+    "title": "Cambiar dirección del contrato de servicio",
+    "subtitle": "Sección donde se define la nueva dirección (address) del contrato de servicio"
+  },
+  "updateTokenPayment": {
+    "title": "Actualizar pago de servicio (Token)",
+    "subtitle": "Sección que te permite actualizar el pago del servicio",
+    "getPayment": "Pago de servicio actual: <primary><bold>{{payment}} {{symbol}}</bold></primary>"
+  },
+  "updateEtherPayment": {
+    "title": "Actualizar pago de servicio",
+    "subtitle": "Sección que te permite actualizar el pago del servicio",
+    "getPayment": "Pago de servicio actual: <primary><bold>{{payment}} {{symbol}}</bold></primary>"
+  },
+  "withdrawByToken": {
+    "title": "Retirar saldo del token seleccionado",
+    "subtitle": "Sección que te permite retirar el balance del token en el servicio"
+  },
+  "withdrawByEther": {
+    "title": "Retirar saldo del balance",
+    "subtitle": "Sección que te permite retirar el balance del servicio"
+  },
+  "message": {
+    "updateAdminWallet": "Se actualizó la billetera (wallet) de administración",
+    "updateFee": "Se actualizó la tarifa (fee) de administración",
+    "UPDATE_SERVICE": "Se actualizó la dirección (address) del contrato de servicio",
+    "withdrawByToken": "Retiro de tokens correctamente",
+    "withdrawByEther": "Retiro de saldo correctamente",
+    "updateService": "Se actualizó correctamente el pago",
+    "updateToken": "Se actualizó correctamente el pago en token"
+  },
+  "service": {
+    "STAKING": "Servicio de staking"
+  }
+}

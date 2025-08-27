@@ -1,0 +1,40 @@
+{
+  "editFee": "Editar Comisión del Token",
+  "renounce": "Renunciar al Token",
+  "details": {
+    "title": "Detalles del Token",
+    "name": "Nombre del Token",
+    "symbol": "Símbolo del Token",
+    "decimals": "Decimales",
+    "owner": "Propietario del Token",
+    "_TAX_FEE": "Impuesto de transacción (Wallet)",
+    "_BURN_FEE": "Comisión de Quema",
+    "_CHARITY_FEE": "Comisión de Recompensa a Titulares",
+    "renounceOwnership": "Renunciar como propietario",
+    "newOwner": "Nueva dirección del propietario",
+    "feeAddress": "Dirección de comisiones (feeAddress)",
+    "newFeeAddress": "Nueva dirección de comisiones (feeAddress)",
+    "totalSupply": "Suministro Total"
+  },
+  "feeUpdate": {
+    "success": "Los honorarios del contrato se han actualizado correctamente",
+    "error": "Error al intentar actualizar los honorarios del contrato"
+  },
+  "renounceOwner": {
+    "success": "Has renunciado exitosamente como propietario del token",
+    "error": "Error al intentar renunciar como propietario del token"
+  },
+  "errors": {
+    "owner": "No eres el propietario del token o has renunciado"
+  },
+  "transferOwner": {
+    "title": "Transferir contrato al nuevo propietario",
+    "success": "La transferencia del propietario se ha realizado con éxito.",
+    "error": "Se ha producido un error al intentar transferir el propietario."
+  },
+  "feeAddress": {
+    "title": "Actualizar la dirección de comisiones",
+    "success": "La dirección de comisiones se ha actualizado correctamente.",
+    "error": "Se ha producido un error al intentar actualizar la dirección de comisiones."
+  }
+}

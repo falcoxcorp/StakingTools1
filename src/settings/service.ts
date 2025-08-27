@@ -1,0 +1,3 @@
+export enum SERVICE_ENUM {
+  SERVICE_STAKING = "STAKING",
+}

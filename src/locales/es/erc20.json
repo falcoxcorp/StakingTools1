@@ -1,0 +1,73 @@
+{
+  "name": "Nombre del Token",
+  "symbol": "Símbolo",
+  "address": "Dirección del Token",
+  "stepper": {
+    "stepper_1": "Blockchain",
+    "stepper_2": "Crear Token",
+    "stepper_3": "Confirmación"
+  },
+  "actions": {
+    "next": "Siguiente",
+    "back": "Anterior",
+    "confirmation": "Crear Token"
+  },
+  "alert": {
+    "alertSwitchNetwork": "Si deseas crear un token en la red <primary><bold>{{network}} ({{slug}})</bold></primary>, debes cambiar a esa red.",
+    "action": "Cambiar Red"
+  },
+  "confirm": {
+    "network": {
+      "details": "Detalles de la Red",
+      "name": "Nombre",
+      "symbol": "Símbolo"
+    },
+    "token": {
+      "details": "Detalles del Token"
+    }
+  },
+  "form": {
+    "_name": "Nombre del Token",
+    "_symbol": "Símbolo",
+    "_eg_symbol": "ej. USDT",
+    "_supply": "Suministro Inicial",
+    "_decimals": "Decimales (1-18)",
+    "_txFee": "Transaction tax(Wallet)",
+    "_lpFee": "Burn fee",
+    "_DexFee": "Holders reward fee",
+    "feeAddress": "Dirección de las Comisiones (feeAddress)",
+    "tokenOwner": "Dirección del Titular del Token (tokenOwner)",
+    "routerAddress": "Dirección del Enrutador",
+    "service": "Servicio",
+    "paymentAmount": "Monto del Servicio"
+  },
+  "advance":{
+    "_txFee": "Tarifa de Recompensa de Titulares (txFee)",
+    "_lpFee": "Auto LP (LpFee)",
+    "_DexFee": "Impuesto a las Transacciones (DexFee)"
+  },
+  "errors": {
+    "SYMBOL": {
+      "MAX_": "El símbolo del token debe tener como máximo 5 caracteres"
+    },
+    "DECIMALS": {
+      "MAX_18": "El máximo de decimales permitido es 18",
+      "MIN_1": "El mínimo de decimales permitido es 1"
+    }
+  },
+  "successOk": {
+    "title": "Completado Exitosamente",
+    "description": "El proceso se ha completado con éxito.",
+    "buttons": {
+      "viewTokens": "Ver Tus Tokens",
+      "createNewToken": "Crear Nuevo Token"
+    }
+  },
+  "successError": {
+    "title": "Error al Crear el Token",
+    "description": "Ocurrió un error, la transacción fue cancelada, hay un error de red o tienes saldo insuficiente. Por favor, contacta al soporte.",
+    "buttons": {
+      "createNewToken": "Intenta de Nuevo"
+    }
+  }
+}

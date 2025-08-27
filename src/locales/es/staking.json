@@ -1,0 +1,195 @@
+{
+  "details": "Detalles del contrato",
+  "onlyStaking": "Solo Staking",
+  "simpleDetail": "Detalles",
+  "stepper": {
+    "stepper_1": "Blockchain",
+    "stepper_2": "Inicialización del Staking",
+    "stepper_3": "Confirmación"
+  },
+  "form": {
+    "token":"Dirección del token",
+    "amount": "Monto",
+    "stakedToken": "Token Apostado",
+    "rewardToken": "Token de Recompensa",
+    "rewardPerBlock": "Recompensa por Bloque",
+    "startBlock": "Fecha de Inicio de Recompensa",
+    "bonusEndBlock": "Fecha de Fin de Recompensa",
+    "numberBlocksForUserLimit": {
+      "title": "Fecha Límite para Usuario",
+      "helperText": "Define la fecha límite para nuevos usuarios, entre la fecha de inicio y la fecha de fin del staking.",
+      "active": "Define la fecha límite para nuevos usuarios. Si se deja inactivo, no hay límite de usuarios.",
+      "detail": "Sin límite de usuarios."
+    },
+    "poolLimitPerUser": {
+      "label": "Límite de Pool por Usuario",
+      "helperText": "Si se establece en 0, no hay límite para la cantidad de tokens que un usuario puede depositar."
+    }
+  },
+
+  "startBlockDate": "Fecha: <date/>",
+  "startBlockNumber": "Número de bloques: {{blocks}}",
+
+  "paidByToken": "Pagar mediante token",
+  "tokenAddress": "Seleccione el método de pago",
+
+  "notes": {
+    "audit": "Solo se necesitan 10 segundos para iniciar exitosamente el proceso de staking, sin necesidad de intervención manual. Después de la confirmación exitosa, las participaciones se asignan automáticamente a la dirección del creador/propietario. El sistema de staking no tiene restricciones de derechos de autor, se implementa automáticamente en la red principal y se verifica.",
+    "note_creation": "Todos los tokens han sido revisados por la empresa de auditoría de seguridad y han superado la auditoría de seguridad del contrato con éxito."
+  },
+
+  "error": {
+    "title": "Error al inicializar el staking",
+    "max-start-block": "La fecha de fin de recompensa debe ser posterior a la fecha de inicio",
+    "max-number-blocks-for-user-limit": "Debes definir un bloque que esté entre el bloque de inicio y el de fin, teniendo como condición (startBlock + numberBlocksForUserLimit) <= endBlock.",
+    "max-amount": "El monto es mayor que tu balance",
+    "max-zero": "El monto debe ser mayor que cero",
+    "greater-than-zero":"La recompensa debe ser mayor que cero"
+  },
+  "success": {
+    "viewStaking": "Ver lista de staking",
+    "createNewStaking": "Inicializar nuevo staking"
+  },
+  "alert": {
+    "message": "Para crear un staking en la red <primary><bold>{{network}} ({{slug}})</bold></primary>, necesitas cambiar a esa red."
+  },
+
+  "pool": {
+    "title": "POZOS DE STAKING",
+    "subtitle": "Gana ingresos pasivos mientras duermes",
+    "sort": {
+      "title": "Ordenado por:",
+      "APR": "APR",
+      "EARNED": "Ganado",
+      "TOTAL_STAKING": "Total en staking",
+      "LATEST": "Más reciente"
+    },
+    "header": {
+      "rewardToken": "Gana {{name}}",
+      "stakingToken": "Staking {{name}}"
+    },
+    "action": {
+      "details": {
+        "startIn": "Inicia en:",
+        "endIn": "Finaliza en:",
+        "endInCount_one": "{{count}} día",
+        "endInCount_other": "{{count}} días",
+        "startInCount_one": "{{count}} día",
+        "startInCount_other": "{{count}} días",
+        "APY": "APY",
+        "stakingTotal": "Total en staking"
+      }
+    }
+  },
+  "action": {
+    "stake": "Staking <primary><bold>{{symbol}}</bold></primary>",
+    "create":"Crear Staking"
+  },
+  "stake": {
+    "modal": {
+      "title": "Staking en pool",
+      "get": "Obtener",
+      "balance": "Balance: {{balance}} {{symbol}} <bold><primary>≈$ {{balanceUSD}}</primary></bold>"
+    },
+    "withdraw": {
+      "title": "Retirar apuesta"
+    }
+  },
+
+  "reward": {
+    "tokenEarn": "Ganar <primary>{{symbol}}</primary>"
+  },
+
+  "message": {
+    "deposit": "Se añadieron correctamente los tokens para staking.",
+    "approve": "Se aprobaron correctamente los tokens para staking.",
+    "withdraw": "Se retiraron correctamente los tokens.",
+    "emergencyRewardWithdraw":"Se retiraron de forma emergencia los tokens de recompensas.",
+    "recoverToken":"Se recuperaron los tokens correctamente.",
+    "stopReward":"Se detuvo el staking correctamente",
+    "updatePoolLimitPerUser":"Se actualizó correctamente el límite de tokens a depositar por usuario",
+    "updateRewardPerBlock":"Se actualizó correctamente la recompensa por bloque",
+    "updateStartAndEndBlocks":"Se actualizó correctamente la fecha de inicio y fin del staking"
+  },
+
+  "equalUSD": "≈$ {{currency}}",
+  "quantityToken": "{{quantity}} {{symbol}}",
+  "quantityUSD": "$ {{quantity}}",
+  "harvest": "Cosechar",
+  "harvesting": "Cosechando <primary>{{symbol}}</primary>",
+  "staked": "Apostado <primary>{{symbol}}</primary>",
+  "withdraw": "Retirar apuesta",
+  "approve": "Aprobar",
+  "liveStaking": "Staking en vivo",
+  "finished": "Finalizado",
+  "noteAPY": "Calculado en base a las tasas actuales y sujeto a cambios según diversas variables externas. Es una estimación aproximada proporcionada únicamente por conveniencia y de ninguna manera representa retornos garantizados.",
+
+  "noResult": {
+    "title": "¡Ups, lo sentimos!",
+    "subtitle": "No existen coincidencias",
+    "description": "Es posible que no estés en la red correcta o que no se haya creado ningún staking",
+    "action": "Crear Staking"
+  },
+
+  "apy": {
+    "info": "Calculado en base a las tasas actuales y sujeto a cambios según diversas variables externas. Es una estimación aproximada proporcionada solo para fines informativos y de ninguna manera representa rendimientos garantizados.",
+    "title": "Calculadora de ROI",
+    "stakedFor": "Apostado durante",
+    "detail": {
+      "title": "ROI A LAS TASAS ACTUALES"
+    }
+  },
+  "stakingList":"Mis Staking",
+  "columns":{
+    "address":"Dirección staking",
+    "tokenStaking":"Token en staking",
+    "tokenReward":"Token de recompensas",
+    "symbol":"Símbolo",
+    "total":"Total en staking"
+  },
+
+  "admin":{
+    "balance":"Balance: <bold><primary>{{balance}} {{symbol}}</primary></bold>",
+    "emergencyRewardWithdraw":{
+      "title":"Retirar tokens de recompensa",
+      "subtitle":"En esta sección puedes retirar los tokens de recompensas pasando la cantidad"
+    },
+    "recoverToken":{
+      "title":"Recuperar tokens",
+      "subtitle":"En esta sección puedes recuperar los tokens enviados accidentalmente",
+      "helperText":"Para recuperar el balance de tu token, escribe la dirección del token."
+    },
+    "stopReward":{
+      "title":"Detener staking",
+      "subtitle":"En esta sección puedes detener el staking, deteniendo la repartición de recompensas",
+      "action":"Detener recompensas"
+    },
+    "updateStartAndEndBlocks":{
+      "title":"Actualizar fecha de inicio y fin del staking",
+      "subtitle":"En esta sección puedes actualizar las fechas de inicio y fin del staking, y puedes inicializar el staking nuevamente."
+    },
+    "updateRewardPerBlock":{
+      "title":"Actualizar recompensa por bloque",
+      "subtitle":"En esta sección puedes actualizar la recompensa por bloque.",
+      "reward":"Recompensa actual: <bold><primary>{{amount}} {{symbol}}</primary></bold>"
+      
+    },
+    "updatePoolLimitPerUser":{
+      "title":"Actualizar límite del pool por usuario",
+      "subtitle":"En esta sección puedes actualizar la cantidad de tokens que un usuario puede depositar. Si se establece en 0, no hay límite de tokens.",
+      "limit":"Límite de token por usuario: <bold><primary>{{amount}} {{symbol}}</primary></bold>",
+      "infinite":"TOKENS ILIMITADOS"
+    }
+  },
+  "rewardPerBlock":"<primary><bold>{{reward}}</bold></primary> x bloque",
+  "rewardCalculate":"Calcular recompensas",
+  "calculate":"Calcular",
+  "totalBlock":"Total de bloques",
+  "copyBalance":"Copiar recompensa",
+  "clipboardCopy":{
+    "success":"Se copió la recompensa por bloque",
+    "error":"Ha ocurrido un error"
+  },
+  "emergencyWithdraw":"Retiro de emergencia",
+  "emergencyWithdrawNote":"<bold><error>Retiro de emergencia</error></bold> permite retirar tokens apostados sin considerar las recompensas. Pensada para emergencias, prioriza la rápida recuperación de los fondos sin tener en cuenta las recompensas acumuladas. Uso exclusivo en situaciones críticas."
+}
