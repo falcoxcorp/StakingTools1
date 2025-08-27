@@ -7,5 +7,11 @@ export default defineConfig({
     outDir: 'pipi-tools'
   },
   plugins: [react()],
+  optimizeDeps: {
+    include: ['lightweight-charts']
+  },
+  define: {
+    global: 'globalThis',
+  }
 })
 
