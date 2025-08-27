@@ -5,10 +5,18 @@
   "type": "module",
   "author": "Silvio Carrandi Noa",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "npx vite preview",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix --force",
+    "security:check": "npm run security:audit && npm run lint",
+    "security:update": "npm update && npm run security:check",
+    "test:security": "npm run lint && npm run build",
+    "deps:check": "npm outdated",
+    "deps:update": "npm update",
+    "backup:create": "git checkout -b backup-$(date +%Y%m%d-%H%M%S) && git add . && git commit -m 'Backup before updates'"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
