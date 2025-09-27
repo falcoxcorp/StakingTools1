@@ -7,7 +7,7 @@ export default defineConfig({
     outDir: 'pipi-tools',
     target: 'es2020',
     sourcemap: false,
-    minify: false,
+    minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -15,6 +15,12 @@ export default defineConfig({
           mui: ['@mui/material', '@mui/icons-material'],
           web3: ['ethers', '@usedapp/core']
         }
+      }
+    },
+    terserOptions: {
+      compress: {
+        drop_console: false,
+        drop_debugger: false
       }
     }
   },
@@ -43,10 +49,7 @@ export default defineConfig({
   },
   esbuild: {
     target: 'es2020',
-    keepNames: true,
-    minifyIdentifiers: false,
-    minifySyntax: false,
-    minifyWhitespace: false
+    logOverride: { 'this-is-undefined-in-esm': 'silent' }
   },
   server: {
     port: 3000,

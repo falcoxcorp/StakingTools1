@@ -17,11 +17,12 @@ class MainErrorBoundary extends Component<
   }
 
   static getDerivedStateFromError(error: Error) {
+    console.error('MainProvider Error Boundary caught:', error)
     return { hasError: true, error }
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Provider Error:', error, errorInfo)
+    console.error('MainProvider Error Details:', error, errorInfo)
   }
 
   render() {
@@ -39,8 +40,29 @@ class MainErrorBoundary extends Component<
           backgroundColor: '#f5f5f5'
         }}>
           <h2>Provider Error:</h2>
-          <pre>{this.state.error?.message}</pre>
-          <button onClick={() => window.location.reload()}>Reload Page</button>
+          <pre style={{ fontSize: '14px', maxWidth: '80%', overflow: 'auto' }}>
+            {this.state.error?.message || 'Unknown provider error'}
+          </pre>
+          <details style={{ marginTop: '20px', textAlign: 'left' }}>
+            <summary>Stack Trace</summary>
+            <pre style={{ fontSize: '12px', overflow: 'auto' }}>
+              {this.state.error?.stack}
+            </pre>
+          </details>
+          <button 
+            onClick={() => window.location.reload()}
+            style={{
+              padding: '10px 20px',
+              backgroundColor: '#007bff',
+              color: 'white',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              marginTop: '20px'
+            }}
+          >
+            Reload Page
+          </button>
         </div>
       )
     }
@@ -49,43 +71,42 @@ class MainErrorBoundary extends Component<
   }
 }
 
-function ErrorFallback({error}: {error: Error}) {
-  return (
-    <div style={{ 
-      padding: '20px', 
-      textAlign: 'center', 
-      color: 'red',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#f5f5f5'
-    }}>
-      <h2>Provider Error:</h2>
-      <pre>{error.message}</pre>
-      <details style={{ marginTop: '20px', textAlign: 'left' }}>
-        <summary>Stack Trace</summary>
-        <pre style={{ fontSize: '12px', overflow: 'auto' }}>{error.stack}</pre>
-      </details>
-    </div>
-  )
-}
-
 const MainProvider = ({ children }: ChildrenProps) => {
-  return (
-    <MainErrorBoundary>
-      <Web3Provider>
-        <SettingsProvider>
-          <I18Provider>
-            <DateProvider>
-              <AppProvider>{children}</AppProvider>
-            </DateProvider>
-          </I18Provider>
-        </SettingsProvider>
-      </Web3Provider>
-    </MainErrorBoundary>
-  );
+  console.log('🔧 MainProvider initializing...')
+  
+  try {
+    return (
+      <MainErrorBoundary>
+        <Web3Provider>
+          <SettingsProvider>
+            <I18Provider>
+              <DateProvider>
+                <AppProvider>{children}</AppProvider>
+              </DateProvider>
+            </I18Provider>
+          </SettingsProvider>
+        </Web3Provider>
+      </MainErrorBoundary>
+    );
+  } catch (error) {
+    console.error('❌ MainProvider error:', error)
+    return (
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        backgroundColor: '#f5f5f5',
+        fontFamily: 'Arial, sans-serif',
+        padding: '20px'
+      }}>
+        <h2 style={{ color: 'red' }}>Provider Error</h2>
+        <p>{error instanceof Error ? error.message : 'Unknown provider error'}</p>
+        <button onClick={() => window.location.reload()}>Reload</button>
+      </div>
+    )
+  }
 };
 
 export default MainProvider

@@ -18,6 +18,24 @@ const LoadingFallback = () => (
   </div>
 )
 
+// Error fallback for critical failures
+const CriticalErrorFallback = ({ error }: { error: string }) => (
+  <div style={{
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundColor: '#f5f5f5',
+    fontFamily: 'Arial, sans-serif',
+    padding: '20px'
+  }}>
+    <h2 style={{ color: 'red' }}>Critical Error</h2>
+    <p>{error}</p>
+    <button onClick={() => window.location.reload()}>Reload</button>
+  </div>
+)
+
 try {
   const rootElement = document.getElementById('root')
   if (!rootElement) {
@@ -25,6 +43,8 @@ try {
   }
 
   const root = ReactDOM.createRoot(rootElement)
+  
+  // Render with error handling
   root.render(
     <StrictMode>
       <Suspense fallback={<LoadingFallback />}>
@@ -34,13 +54,36 @@ try {
       </Suspense>
     </StrictMode>
   )
+  
+  console.log('✅ App rendered successfully')
 } catch (error) {
-  console.error('Failed to render app:', error)
-  document.body.innerHTML = `
-    <div style="padding: 20px; color: red; font-family: Arial;">
-      <h2>App Failed to Load</h2>
-      <p>Error: ${error instanceof Error ? error.message : 'Unknown error'}</p>
-      <button onclick="window.location.reload()">Reload</button>
-    </div>
-  `
+  console.error('❌ Failed to render app:', error)
+  
+  // Fallback rendering
+  const rootElement = document.getElementById('root')
+  if (rootElement) {
+    rootElement.innerHTML = `
+      <div style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      ">
+        <h2 style="color: red;">App Failed to Load</h2>
+        <p>Error: ${error instanceof Error ? error.message : 'Unknown error'}</p>
+        <button onclick="window.location.reload()" style="
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        ">Reload</button>
+      </div>
+    `
+  }
 }
