@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     outDir: 'pipi-tools',
-    target: 'es2020',
+    target: 'es2015',
     sourcemap: false,
-    minify: 'terser',
+    minify: false,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -15,12 +15,6 @@ export default defineConfig({
           mui: ['@mui/material', '@mui/icons-material'],
           web3: ['ethers', '@usedapp/core']
         }
-      }
-    },
-    terserOptions: {
-      compress: {
-        drop_console: false,
-        drop_debugger: false
       }
     }
   },
@@ -37,19 +31,12 @@ export default defineConfig({
     exclude: [],
     force: false,
     esbuildOptions: {
-      target: 'es2020',
-      supported: {
-        bigint: true
-      }
+      target: 'es2015'
     }
   },
   define: {
     global: 'globalThis',
     'process.env': {}
-  },
-  esbuild: {
-    target: 'es2020',
-    logOverride: { 'this-is-undefined-in-esm': 'silent' }
   },
   server: {
     port: 3000,
@@ -57,7 +44,7 @@ export default defineConfig({
     host: true,
     hmr: false,
     watch: {
-      usePolling: false,
+      usePolling: true,
       interval: 1000
     }
   },

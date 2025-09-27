@@ -1,8 +1,10 @@
-import { StrictMode, Suspense } from 'react'
+import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import "@fontsource/poppins";
 import MainProvider from './contexts/MainProvider.tsx'
+
+console.log('🚀 Starting STAKING TOOLS application...')
 
 // Simple loading fallback
 const LoadingFallback = () => (
@@ -12,13 +14,14 @@ const LoadingFallback = () => (
     alignItems: 'center',
     height: '100vh',
     backgroundColor: '#f5f5f5',
-    fontFamily: 'Arial, sans-serif'
+    fontFamily: 'Arial, sans-serif',
+    fontSize: '18px'
   }}>
     <div>Loading STAKING TOOLS...</div>
   </div>
 )
 
-// Error fallback for critical failures
+// Critical error fallback
 const CriticalErrorFallback = ({ error }: { error: string }) => (
   <div style={{
     display: 'flex',
@@ -28,40 +31,56 @@ const CriticalErrorFallback = ({ error }: { error: string }) => (
     height: '100vh',
     backgroundColor: '#f5f5f5',
     fontFamily: 'Arial, sans-serif',
-    padding: '20px'
+    padding: '20px',
+    textAlign: 'center'
   }}>
-    <h2 style={{ color: 'red' }}>Critical Error</h2>
-    <p>{error}</p>
-    <button onClick={() => window.location.reload()}>Reload</button>
+    <h2 style={{ color: 'red', marginBottom: '20px' }}>Critical Error</h2>
+    <p style={{ marginBottom: '20px' }}>{error}</p>
+    <button 
+      onClick={() => window.location.reload()}
+      style={{
+        padding: '10px 20px',
+        backgroundColor: '#007bff',
+        color: 'white',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer'
+      }}
+    >
+      Reload Application
+    </button>
   </div>
 )
 
 try {
+  console.log('🔍 Looking for root element...')
   const rootElement = document.getElementById('root')
+  
   if (!rootElement) {
+    console.error('❌ Root element not found')
     throw new Error('Root element not found')
   }
 
+  console.log('✅ Root element found, creating React root...')
   const root = ReactDOM.createRoot(rootElement)
   
-  // Render with error handling
+  console.log('🎨 Rendering application...')
   root.render(
     <StrictMode>
-      <Suspense fallback={<LoadingFallback />}>
-        <MainProvider>
-          <App />
-        </MainProvider>
-      </Suspense>
+      <MainProvider>
+        <App />
+      </MainProvider>
     </StrictMode>
   )
   
-  console.log('✅ App rendered successfully')
+  console.log('✅ Application rendered successfully')
 } catch (error) {
-  console.error('❌ Failed to render app:', error)
+  console.error('❌ Critical error during app initialization:', error)
   
   // Fallback rendering
   const rootElement = document.getElementById('root')
   if (rootElement) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown initialization error'
     rootElement.innerHTML = `
       <div style="
         display: flex;
@@ -72,9 +91,10 @@ try {
         background-color: #f5f5f5;
         font-family: Arial, sans-serif;
         padding: 20px;
+        text-align: center;
       ">
-        <h2 style="color: red;">App Failed to Load</h2>
-        <p>Error: ${error instanceof Error ? error.message : 'Unknown error'}</p>
+        <h2 style="color: red; margin-bottom: 20px;">App Failed to Load</h2>
+        <p style="margin-bottom: 20px;">Error: ${errorMessage}</p>
         <button onclick="window.location.reload()" style="
           padding: 10px 20px;
           background-color: #007bff;
@@ -82,7 +102,7 @@ try {
           border: none;
           border-radius: 4px;
           cursor: pointer;
-        ">Reload</button>
+        ">Reload Application</button>
       </div>
     `
   }
