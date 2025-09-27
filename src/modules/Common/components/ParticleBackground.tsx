@@ -1,30 +1,23 @@
-import ParticlesBg from "particles-bg";
 import { memo } from "react";
 
 const ParticleBackground = () => {
-  const particlesConfig = {
-    num: [400], // Número de partículas
-    rps: 0.1, // Rotaciones por segundo
-    radius: [5, 10], // Tamaño de las partículas
-    life: [1, 2], // Duración de la vida de las partículas
-    v: [1, 3], // Velocidad de las partículas
-    tha: [0, Math.PI], // Ángulo de las partículas
-    alpha: [0.5, 1], // Opacidad de las partículas
-    scale: [1, 2], // Escala de las partículas
-    position: "center", // Posición de las partículas
-    color: ["#e3bd52"], // Color primario
-    cross: "transparent", // Color de cruz de partículas
-    random: null, // Sin aleatorización
-    g: 0.1, // Gravedad de las partículas
-    f: [0.1, 0.2], // Fuerza de atracción de partículas
-  };
-
+  // Fallback CSS-only particle effect to maintain visual consistency
   return (
-    <ParticlesBg
-      type="cobweb"
-      bg={true}
-      color="#e3bd52"
-      config={particlesConfig}
+    <div
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: `
+          radial-gradient(circle at 20% 50%, rgba(227, 189, 82, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(227, 189, 82, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 80%, rgba(227, 189, 82, 0.1) 0%, transparent 50%)
+        `,
+        pointerEvents: 'none',
+        zIndex: -1
+      }}
     />
   );
 };
