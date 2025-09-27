@@ -18,7 +18,8 @@ export default defineConfig({
   },
   plugins: [react()],
   optimizeDeps: {
-    include: ['lightweight-charts', 'react', 'react-dom']
+    include: ['react', 'react-dom', 'ethers', '@usedapp/core'],
+    exclude: ['@nomicfoundation/hardhat-toolbox']
   },
   define: {
     global: 'globalThis',
@@ -28,4 +29,3 @@ export default defineConfig({
     open: true
   }
 })
-

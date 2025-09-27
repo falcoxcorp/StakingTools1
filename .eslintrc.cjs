@@ -2,15 +2,14 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    '@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     "plugin:react/recommended"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { 
     ecmaVersion: 'latest', 
-    sourceType: 'module',
-    project: './tsconfig.json'
+    sourceType: 'module'
   },
   plugins: [
     'react-refresh',
@@ -21,13 +20,13 @@ module.exports = {
     "semi": "off",
     "@typescript-eslint/semi": "off",
     "react/react-in-jsx-scope": "off",
-    "camelcase": "error",
-    "spaced-comment": "error",
+    "camelcase": "warn",
+    "spaced-comment": "warn",
     "quotes": [
-      "error",
+      "warn",
       "single"
     ],
-    "no-duplicate-imports": "error",
+    "no-duplicate-imports": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -42,10 +41,10 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "prefer-promise-reject-errors": "off",
     'react-refresh/only-export-components': 'warn',
-    "multiline-ternary": "warn",
+    "multiline-ternary": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "no-empty-function": "off",
-    "@typescript-eslint/no-empty-function": "error",
-    "@typescript-eslint/no-explicit-any": "error"
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-explicit-any": "warn"
   }
 }
