@@ -60,6 +60,8 @@ export default defineConfig({
       protocol: 'wss',
       clientPort: 3001
     },
+      clientPort: 3001
+    },
     watch: {
       usePolling: true,
       interval: 1000
