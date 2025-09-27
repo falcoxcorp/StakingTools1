@@ -1,5 +1,5 @@
-
 import ParticlesBg from "particles-bg";
+import { memo } from "react";
 
 const ParticleBackground = () => {
   const particlesConfig = {
@@ -20,7 +20,6 @@ const ParticleBackground = () => {
   };
 
   return (
-
     <ParticlesBg
       type="cobweb"
       bg={true}
@@ -30,4 +29,4 @@ const ParticleBackground = () => {
   );
 };
 
-export default ParticleBackground;
+export default memo(ParticleBackground);
