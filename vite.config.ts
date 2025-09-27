@@ -57,6 +57,8 @@ export default defineConfig({
     open: true,
     host: true,
     hmr: {
+      protocol: 'wss',
+      clientPort: 3001
     },
     watch: {
       usePolling: true,
