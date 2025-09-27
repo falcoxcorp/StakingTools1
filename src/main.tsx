@@ -1,8 +1,22 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import "@fontsource/poppins";
 import MainProvider from './contexts/MainProvider.tsx'
+
+// Simple loading fallback
+const LoadingFallback = () => (
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundColor: '#f5f5f5',
+    fontFamily: 'Arial, sans-serif'
+  }}>
+    <div>Loading STAKING TOOLS...</div>
+  </div>
+)
 
 try {
   const rootElement = document.getElementById('root')
@@ -13,9 +27,11 @@ try {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
-      <MainProvider>
-        <App />
-      </MainProvider>
+      <Suspense fallback={<LoadingFallback />}>
+        <MainProvider>
+          <App />
+        </MainProvider>
+      </Suspense>
     </StrictMode>
   )
 } catch (error) {
