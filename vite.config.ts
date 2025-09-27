@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     outDir: 'pipi-tools',
-    target: 'esnext',
+    target: 'es2020',
     sourcemap: false,
-    minify: 'terser',
+    minify: false,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -29,9 +29,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'ethers', '@usedapp/core'],
     exclude: [],
-    force: true,
+    force: false,
     esbuildOptions: {
-      target: 'esnext',
+      target: 'es2020',
       supported: {
         bigint: true
       }
@@ -42,23 +42,19 @@ export default defineConfig({
     'process.env': {}
   },
   esbuild: {
-    logOverride: { 
-      'this-is-undefined-in-esm': 'silent',
-      'direct-eval': 'silent'
-    },
-    target: 'esnext',
+    target: 'es2020',
     keepNames: true,
     minifyIdentifiers: false,
-    minifySyntax: true,
-    minifyWhitespace: true
+    minifySyntax: false,
+    minifyWhitespace: false
   },
   server: {
     port: 3000,
-    open: true,
+    open: false,
     host: true,
     hmr: false,
     watch: {
-      usePolling: true,
+      usePolling: false,
       interval: 1000
     }
   },
