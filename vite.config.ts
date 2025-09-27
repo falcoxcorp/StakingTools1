@@ -10,29 +10,19 @@ export default defineConfig({
     minify: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          mui: ['@mui/material', '@mui/icons-material'],
-          web3: ['ethers', '@usedapp/core']
-        }
+        manualChunks: undefined
       }
     }
   },
   plugins: [
     react({
-      jsxRuntime: 'automatic',
-      babel: {
-        plugins: []
-      }
+      jsxRuntime: 'automatic'
     })
   ],
   optimizeDeps: {
-    include: ['react', 'react-dom', 'ethers', '@usedapp/core'],
-    exclude: [],
-    force: false,
-    esbuildOptions: {
-      target: 'es2015'
-    }
+    include: ['react', 'react-dom'],
+    exclude: ['ethers'],
+    force: false
   },
   define: {
     global: 'globalThis',
@@ -44,11 +34,8 @@ export default defineConfig({
     host: true,
     hmr: false,
     watch: {
-      usePolling: true,
-      interval: 1000
+      usePolling: false
     }
   },
-  worker: {
-    format: 'es'
-  }
+  esbuild: false
 })

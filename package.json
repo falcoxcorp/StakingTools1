@@ -5,7 +5,7 @@
   "type": "module",
   "author": "Silvio Carrandi Noa",
   "scripts": {
-    "dev": "NODE_OPTIONS=--max-old-space-size=4096 vite",
+    "dev": "vite --force",
     "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -19,6 +19,7 @@
     "backup:create": "git checkout -b backup-$(date +%Y%m%d-%H%M%S) && git add . && git commit -m 'Backup before updates'"
   },
   "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.5.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/poppins": "^5.0.8",
@@ -56,6 +57,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@swc/core": "^1.3.107",
     "@types/lodash": "^4.17.4",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
@@ -67,7 +69,8 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "terser": "^5.44.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "@rollup/plugin-replace": "^5.0.5"
   },
   "overrides": {
     "ethers": "5.7.2",
