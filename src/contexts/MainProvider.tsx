@@ -1,10 +1,53 @@
-import { ErrorBoundary } from 'react-error-boundary';
+import React, { ErrorInfo, Component } from 'react';
 import { ChildrenProps } from '../common/types/common';
 import { I18Provider } from './I18Context';
 import DateProvider from './DateProvider';
 import { AppProvider } from './AppProvider';
 import SettingsProvider from './SettingsProvider';
 import Web3Provider from './block_chain/Web3Provider';
+
+// Simple Error Boundary without external dependencies
+class MainErrorBoundary extends Component<
+  { children: React.ReactNode },
+  { hasError: boolean; error?: Error }
+> {
+  constructor(props: { children: React.ReactNode }) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true, error }
+  }
+
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error('Provider Error:', error, errorInfo)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ 
+          padding: '20px', 
+          textAlign: 'center', 
+          color: 'red',
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#f5f5f5'
+        }}>
+          <h2>Provider Error:</h2>
+          <pre>{this.state.error?.message}</pre>
+          <button onClick={() => window.location.reload()}>Reload Page</button>
+        </div>
+      )
+    }
+
+    return this.props.children
+  }
+}
 
 function ErrorFallback({error}: {error: Error}) {
   return (
@@ -31,7 +74,7 @@ function ErrorFallback({error}: {error: Error}) {
 
 const MainProvider = ({ children }: ChildrenProps) => {
   return (
-    <ErrorBoundary FallbackComponent={ErrorFallback}>
+    <MainErrorBoundary>
       <Web3Provider>
         <SettingsProvider>
           <I18Provider>
@@ -41,7 +84,7 @@ const MainProvider = ({ children }: ChildrenProps) => {
           </I18Provider>
         </SettingsProvider>
       </Web3Provider>
-    </ErrorBoundary>
+    </MainErrorBoundary>
   );
 };
 

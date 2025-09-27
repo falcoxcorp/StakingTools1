@@ -6,6 +6,8 @@ export default defineConfig({
   build: {
     outDir: 'pipi-tools',
     target: 'es2020',
+    sourcemap: false,
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -19,13 +21,20 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     include: ['react', 'react-dom', 'ethers', '@usedapp/core'],
-    exclude: ['@nomicfoundation/hardhat-toolbox']
+    exclude: ['@nomicfoundation/hardhat-toolbox'],
+    force: true
   },
   define: {
     global: 'globalThis',
   },
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' }
+  },
   server: {
     port: 3000,
-    open: true
+    open: true,
+    hmr: {
+      overlay: false
+    }
   }
 })
